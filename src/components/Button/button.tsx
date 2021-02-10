@@ -26,11 +26,11 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>;
  * ~~~js
  * import { Button } from 'vikingship'
  * ~~~
- */
+ */ 
 export const Button: FC<ButtonProps> = (props => {
   const {
     btnType,
-    className,
+    className, 
     disabled,
     size,
     href,
