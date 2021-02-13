@@ -77,7 +77,7 @@ Dialog.defaultProps = {
  * 
  * ~~~js
  * // 这样引用
- * import{ Model } from 'dialog'
+ * import{ Model } from 'hi-design'
  *
    const openModel = () => {
     const close = Model(<h1>你好
@@ -119,7 +119,7 @@ export const Model = (content: React.ReactNode, buttons?: Array<React.ReactEleme
  * 
  * ~~~js
  * // 这样引用
- * import{ Alert } from './dialog'
+ * import{ Alert } from 'hi-design'
  *
   return (
     <Button onClick={() => Alert('你好')}>Alert</Button>
@@ -136,7 +136,7 @@ export const Alert = (content: string) => {
  * 
  * ~~~js
  * // 这样引用
- * import{ Confirm } from './dialog'
+ * import{ Confirm } from 'hi-design'
  *
   return (
     <Button onClick={() => Confirm('你好', () => { console.log('yes')}, () => { console.log('nos')})}>
