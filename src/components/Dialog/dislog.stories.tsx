@@ -8,8 +8,6 @@ export default {
   component: Dialog
 } as Meta;
 
-
-
 const defaultDialogTmp: Story<DialogProps> = (args) => {
   return (
     <div>
