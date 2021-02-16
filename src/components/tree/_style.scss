@@ -1,0 +1,44 @@
+.hi-tree {
+  &-item {
+    border: 1px solid;
+    line-height: 1.5;
+  }
+  &-level-1 {
+    .hi-tree-text {
+      padding-left: 0;
+    }
+  }
+  &-level-2 {
+    .hi-tree-text {
+      padding-left: 1em;
+    }
+  }
+  &-level-3 {
+    .hi-tree-text {
+      padding-left: 2em;
+    }
+  }
+  &-level-4 {
+    .hi-tree-text {
+      padding-left: 3em;
+    }
+  }
+  &-level-5 {
+    .hi-tree-text {
+      padding-left: 3em;
+    }
+  }
+  &-text {
+    display: block;
+    &:hover {
+      background: yellow;
+    }
+  }
+  &-children {
+    overflow: hidden;
+    transition: height 200ms;
+    &-gone {
+      height: 0;
+    }
+  }
+}
