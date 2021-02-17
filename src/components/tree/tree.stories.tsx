@@ -21,6 +21,9 @@ const DefaultTreeTmp: Story<TreeProps> = () => {
         children: [
           {
             text: '1.1.1', value: '1.1.1'
+          },
+          {
+            text: '1.1.2', value: '1.1.2'
           }
         ]
       },
@@ -34,13 +37,15 @@ const DefaultTreeTmp: Story<TreeProps> = () => {
       { text: '2.2', value: '2.2'},
     ]
   }])
-  const [selectedValues, setSelectedValues] = useState(['1.1.1', '1.1.2'])
+  const [selectedValues, setSelectedValues] = useState([])
   const [selectedValue, setSelectedValue] = useState('1')
   return (
     <div style={{width: 200}}>
+      selectedValue: {selectedValues}
       <Tree sourceData={array}
-        selected={selectedValue}
-        onChange={(selected: string) => setSelectedValue(selected)}
+        selected={selectedValues}
+        onChange={(selected: string[]) => setSelectedValues(selected)}
+        multiple={true}
       ></Tree>
     </div>
   )

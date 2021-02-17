@@ -3,6 +3,14 @@ import * as React from 'react';
 import TreeItem from './tree-item';
 
 export const Tree: React.FC<TreeProps> = (props) => {
+  const onItemChange = (values: string[] | string) => {
+    if (props.multiple) {
+      props.onChange(Array.from(new Set(values)) as string[])
+    } else {
+      props.onChange(values as string)
+    }
+    
+  }
   return (
     <div>
       {
@@ -12,6 +20,7 @@ export const Tree: React.FC<TreeProps> = (props) => {
             treeProps={props}
             item={item}
             level={1}
+            onItemChange={onItemChange}
           ></TreeItem>
         })
       }
