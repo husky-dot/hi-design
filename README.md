@@ -3,6 +3,10 @@
 `hi-design` 是小智自学 React 造的一套组件库，为了更好的学习 React
 
 
+### 预览地址
+
+http://www.longstudy.club/hi-design/index.html
+
 ### 安装
 
 
