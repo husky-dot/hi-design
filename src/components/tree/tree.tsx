@@ -7,7 +7,7 @@ export const Tree: React.FC<TreeProps> = (props) => {
     if (props.multiple) {
       props.onChange(Array.from(new Set(values)) as string[])
     } else {
-      props.onChange(values as string)
+      // props.onChange(values as string)
     }
     
   }

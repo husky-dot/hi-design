@@ -47,11 +47,11 @@ export const TreeItem: FC<TreeItemProps> = (props) => {
         props.onItemChange(treeProps.selected.filter(value => value !== item.value && childrenValues.indexOf(value) === -1))
       }
     } else {
-      if (e.target.checked) {
-        treeProps.onChange(item.value)
-      } else {
-        treeProps.onChange('')
-      }
+      // if (e.target.checked) {
+      //   treeProps.onChange(item.value)
+      // } else {
+      //   treeProps.onChange('')
+      // }
       
     }
   }
